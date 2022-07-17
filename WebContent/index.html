@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bancomat</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+	crossorigin="anonymous">
+</head>
+<body>
+	<form method="POST" action="http://localhost:8080/BE_ProgettoSettimana06/BancaServlet">
+		<div class="mb-3">
+			<label for="numeroConto" class="form-label">Inserisci il tuo
+				numero di conto:</label> <input type="number" class="form-control"
+				name="numeroConto" aria-describedby="emailHelp">
+		</div>
+		<div class="mb-3">
+			<label for="pin" class="form-label">Inserisci il tuo pin:</label> <input
+				type="number" class="form-control" name="pin">
+			<div id="pinHelp" class="form-text">Non condividere mai con
+				nessuno il tuo pin.</div>
+		</div>
+		<button type="submit" class="btn btn-primary">Entra</button>
+	</form>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+</body>
+</html>

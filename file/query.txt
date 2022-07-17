@@ -1,0 +1,5 @@
+create table banca.contocorrente (
+    numero int primary key not null,
+    intestatario varchar(20) not null,
+    saldo float not null,
+    pin int not null);
